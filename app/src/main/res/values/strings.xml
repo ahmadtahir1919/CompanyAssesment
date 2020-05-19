@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CompanyAssesment</string>
+    <string name="dummy_name">Dummy Name</string>
+    <string name="api_key">AIzaSyDmJIDv7kpZ-YxVEPtFJB1lPjJoyH7nRME</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="email_id">Email Id:-</string>
+    <string name="name">Name:-</string>
+    <string name="user_name">User Name:-</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="stay_safe">Stay Safe</string>
+    <string name="company">Company:-</string>
+    <string name="permission_denied">If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]</string>
+    <string name="dummy_number">03124350505</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="search_by_name_or_number">Search by name or number</string>
+    <string name="export_local_data">Export Local Data</string>
+    <string name="export_online_data">Export Online Data</string>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_dummy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Name:- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/dummy_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txt_dummy_name"
+            app:layout_constraintStart_toEndOf="@+id/txt_dummy_user_name" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_dummy_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="User Name:- "
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dummy_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_user_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/dummy_name"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toEndOf="@+id/txt_dummy_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_dummy_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="City:- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dummy_user_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/dummy_name"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@+id/txt_user_contact_number"
+            app:layout_constraintTop_toBottomOf="@+id/txt_user_contact_number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_dummy_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/company"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dummy_address_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/dummy_name"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_address_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

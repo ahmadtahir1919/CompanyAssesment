@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.companyassesment"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility '1.8'
+        targetCompatibility '1.8'
+    }
+
+}
+
+dependencies {
+
+    def gmsPlayVersion = '17.0.0'
+    def gmsMapVersion = '16.1.0'
+    def gmsAuthVersion = '17.0.0'
+    def retrofit2Version = '2.3.0'
+    def loggingInterceptorVersion = '3.8.1'
+    def gsonVersion = '2.8.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.multidex:multidex:2.0.1'
+    def lottieVersion = "3.4.0"
+
+
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    /* Dagger */
+    implementation 'com.google.dagger:dagger:2.25.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.25.2'
+    compileOnly 'javax.annotation:jsr250-api:1.0'
+
+    /**
+     * Retrofit 2.0 for Async HTTPs Requests
+     */
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2Version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2Version"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit2Version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion"
+
+
+    //ForViewModel
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.1.0"
+
+    ///Matirial Design
+    implementation 'com.google.android.material:material:1.0.0'
+
+    /**
+     * ButterKnife for View Binding
+     */
+
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    /**
+     * For All Dimensions excepts textView and Edit text sizes
+     */
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    /**
+     * For TextView and Edit Texts Sizes.
+     */
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+
+    /**
+     * Dependencies for Google Maps, LocationDataModel services and cloud services like GCM Push
+     */
+    implementation "com.google.android.gms:play-services-location:$gmsPlayVersion"
+    implementation "com.google.android.gms:play-services-maps:$gmsMapVersion"
+    implementation "com.google.android.gms:play-services-places:$gmsPlayVersion"
+    implementation "com.google.android.gms:play-services-auth:$gmsAuthVersion"
+    implementation "com.google.android.gms:play-services-identity:$gmsPlayVersion"
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.libraries.places:places:2.1.0'
+
+    //for animation
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    // circle image view
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    compile  'org.apache.commons:commons-lang3:3.0'
+ //For permission Check
+    implementation 'gun0912.ted:tedpermission:2.2.1'
+/**
+ * PICASSO
+ */
+    implementation 'com.squareup.picasso:picasso:2.71828'
+//For test Cases
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
